@@ -1,7 +1,12 @@
 {{page-title "Animales"}}
 <h1>Animales</h1>
 
+<ul>
+  {{#each @model as |Animales|}}
+    <li>{{Animales}}</li>
+  {{/each}}
+</ul>
 
-<ListaPersonas @title="Lista De Personas"
+<ListaPersonas @title="Personas"
   @personas={{@model}}/>
 {{outlet}}
