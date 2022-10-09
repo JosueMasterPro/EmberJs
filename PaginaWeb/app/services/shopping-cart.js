@@ -5,6 +5,7 @@ class Item {
   @tracked count;
 
   name;
+  category;
   color;
   image;
   price;
@@ -12,6 +13,7 @@ class Item {
   constructor(item) {
     this.count = item.count;
     this.name = item.name;
+    this.category=item.category;
     this.color = item.color;
     this.image = item.image;
     this.price = item.price;

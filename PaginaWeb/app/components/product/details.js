@@ -7,9 +7,10 @@ export default class ProductDetailsComponent extends Component {
 
   @action
   addToCart() {
-    const { name, color, colors, price } = this.args;
+    const { name,category ,color, colors, price } = this.args;
     this.cart.addItem({
       name,
+      category,
       color,
       image: colors.find((colorInfo) => colorInfo.color === color).image,
       price: price.current,

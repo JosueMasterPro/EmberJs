@@ -3,6 +3,7 @@
   [{
       "id": "1",
       "name": "Beats Solo Wireless Headphones",
+      "category": "Electronic",
       "description": "With up to 40 hours of battery life, Beats Solo Wireless is your perfect everyday headphone",
       "price": {
         "original": 199.95,
@@ -30,6 +31,7 @@
     {
       "id": "2",
       "name": "Nike Aire Force 1",
+      "category": "Shoes",
       "description": "Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world.",
       "price": {
         "original": 109.95,
@@ -48,6 +50,7 @@
     {
       "id": "3",
       "name": "wireless controller ps4",
+      "category": "Electronic",
       "description": "Experience the power of gaming at your fingertips. The Sony DualShock 4 Wireless Controller for PlayStation 4 enhances your gaming experience",
       "price": {
         "original": 0,
