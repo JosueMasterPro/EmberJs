@@ -48,14 +48,39 @@
     &.color-black {
       background: black;
     }
-  }
 
+    &.color-green {
+      background: green;
+    }
+    
+    &.color-blue {
+      background: blue;
+    }
+    
+    &.color-purple {
+      background: purple;
+    }
+
+
+  }
   .active-red .color-red:before {
     border: 1px solid #c0392b;
   }
 
   .active-black .color-black:before {
     border: 1px solid #2c3e50;
+  }
+
+  .active-green .color-green:before {
+    border: 1px solid #1BF01B;
+  }
+
+  .active-blue .color-blue:before {
+    border: 1px solid #1D52F0;
+  }
+
+  .active-purple .color-purple:before {
+    border: 1px solid #8A008A;
   }
 }
 
