@@ -16,14 +16,15 @@ export default class IndexRoute extends Route {
         el.name.toLowerCase().indexOf(query.toLowerCase()) > -1
       );
     };
-    //const search = document.querySelector('#search');
-    //const boton = document.querySelector('#button');
+    const search = document.querySelector('#search');
+    const boton = document.querySelector('#button');
+    const texto = 'head';
     const z=filterItems('');
     console.log(z);
     return z;
   }
   @action
-  search(){
-    console.log(z);
+  search(dir){
+    console.log(dir);
   }
 }
