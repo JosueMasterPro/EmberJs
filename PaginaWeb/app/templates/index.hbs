@@ -1,22 +1,16 @@
 <GeneralContainer>
+  <br/>
+  <br/>
+  <br/>
   <nav class="navbar navbar-light bg-light">
-      <input name="search" id="search" class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button id="button" class="btn btn-outline-success my-2 my-sm-0" type="submit">
+      <input name="search" id="search" class="form-control mr-sm-1" type="text" placeholder="Search" {{on "input" this.filter}}>
+      <button id="button" class="btn btn-outline-success my-2 my-sm-0" type="submit" {{on "click" this.filter}}>
         Search
       </button>
+      {{this.texto}}
+      xD
   </nav>
-  <script>
-    const search = document.querySelector('#search');
-    const boton = document.querySelector('#button');
-    const filtro = ()=>{
-      console.log(search.value);
-    };
-    boton.addEventListener('click',filtro);
-    search.addEventListener('ochange',filtro);
-  </script>
-
-
-  {{#each this.model as |product|}}
+  {{#each this.Product key="@index" as |product|}}
     <Product @product={{product}}/>
   {{/each}}
 </GeneralContainer>
