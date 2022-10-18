@@ -9,11 +9,16 @@
       <i class="fa fa-star"></i>
       <i class="fa fa-star-half-o"></i>
     </div>
+    <h4>{{@category}}</h4>
   </section>
   {{!-- Price --}}
 <section class={{unless @isDetails 'h4'}}>
-     <del data-test-original-price class="small text-black-50">{{currency @price.original}}</del>
-    <i data-test-current-price class="text-danger font-weight-bold">{{currency @price.current}}</i>
+     {{!-- {{#if this.showValue}}
+      <i data-test-current-price class="text-danger font-weight-bold">{{currency @price.current}}</i>--}}
+     {{!-- {{else}}--}}
+        <del data-test-original-price class="small text-black-50">{{currency @price.original}}</del>
+        <i data-test-current-price class="text-danger font-weight-bold">{{currency @price.current}}</i>
+     {{!-- {{/if}}--}}
   </section>
 
   {{#if @isDetails}}

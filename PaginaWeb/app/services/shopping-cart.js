@@ -23,8 +23,8 @@ export default class ShoppingCartService extends Service {
   @tracked itemList = [];
 
   addItem(item) {
-    const existingItem = this.itemList.find(({ name, color }) => {
-      return name === item.name && color === item.color;
+    const existingItem = this.itemList.find(({ name, color,category }) => {
+      return name === item.name && color === item.color && category === item.category;
     });
 
     if (existingItem) {
