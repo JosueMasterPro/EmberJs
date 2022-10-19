@@ -1,16 +1,13 @@
 <GeneralContainer>
-  <br/>
-  <br/>
-  <br/>
-  <nav class="navbar navbar-light bg-light">
-      <input name="search" id="search" class="form-control mr-sm-1" type="text" placeholder="Search" {{on "input" this.filter}}>
-      <button id="button" class="btn btn-outline-success my-2 my-sm-0" type="submit" {{on "click" this.filter}}>
-        Search
-      </button>
-      {{this.texto}}
-      xD
-  </nav>
-  {{#each this.Product key="@index" as |product|}}
+  <center>
+    <div class="input-group mb-3 barra-busqueda">
+      <div class="input-group-prepend">
+        <button id="button" class="btn btn-outline-secondary" type="button" {{on "click" this.filter}}><i class="fa fa-search"></i></button>
+      </div>
+      <input name="search"  id="search" type="text" class="form-control" placeholder="Search" aria-label="" aria-describedby="basic-addon1" {{on "input" this.filter}}>
+    </div>
+  </center>
+  {{#each this.Product as |product|}}
     <Product @product={{product}}/>
   {{/each}}
 </GeneralContainer>

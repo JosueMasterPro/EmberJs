@@ -8,7 +8,7 @@ export default class IndexRoute extends Route {
 
   async model() {
     const data = await this.store.findAll('product');
-    let Pro = this.store.peekAll('product');
+   /* let Pro = this.store.peekAll('product');
     const filterItems = (query) => {
       return Pro.filter(
         (el) => el.name.toLowerCase().indexOf(query.toLowerCase()) > -1
@@ -17,6 +17,6 @@ export default class IndexRoute extends Route {
     
     const z = filterItems('');
     //console.log(z);
-    return z;
+    return z;*/
   }
 }
