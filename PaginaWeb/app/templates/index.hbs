@@ -1,10 +1,17 @@
 <GeneralContainer>
   <center>
-    <div class="input-group mb-3 barra-busqueda">
+    <div class="input-group mb-3 w-75">
       <div class="input-group-prepend">
-        <button id="button" class="btn btn-outline-secondary" type="button" {{on "click" this.filter}}><i class="fa fa-search"></i></button>
+        <button id="button" class="btn btn-outline-secondary" style="width: 50px;" type="button" {{on "click" this.filter}}><i class="fa fa-search"></i></button>
       </div>
-      <input name="search"  id="search" type="text" class="form-control" placeholder="Search" aria-label="" aria-describedby="basic-addon1" {{on "input" this.filter}}>
+      <input name="search"  id="search" type="text" class="form-control" placeholder="Search" style="width: 100px;" aria-describedby="basic-addon1" {{on "input" this.filter}}>
+      <select class="form-select form-select-sm " id="category" {{on "input" this.ComboBox}}>
+      <option selected="" value="0">Categoria</option>
+        <option value="electronic">Electronica</option>
+        <option value="shoes">zapatos</option>
+        <option value="Cosmetic">Cosmeticos</option>
+        <option value="Ropa">Ropa</option>
+    </select>
     </div>
   </center>
   {{#each this.Product as |product|}}
