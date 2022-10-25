@@ -5,7 +5,7 @@ import { action } from '@ember/object';
 export default class ProductDetailsComponent extends Component {
   @service('shopping-cart') cart;
 
-  @action
+  @action 
   addToCart() {
     const { name, category, color, colors, price } = this.args;
     this.cart.addItem({

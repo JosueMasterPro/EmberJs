@@ -32,14 +32,13 @@ export default class IndexController extends Controller {
     @action
     filter() {
         this.ComboBox();
-
     }
     @action
     ComboBox() { 
         this.cod = document.getElementById("category");
         this.datos = this.Pro1;
         this.Filtros = this.Pro1;
-        if(this.cod.value == 0){
+        if(this.cod.value == 0 || this.cod.value == 1){
             this.Filtros = this.filterItemsbyCategory(this.datos,'');
             this.datos = this.filterItemsbyName(this.Filtros,search.value);
         }
