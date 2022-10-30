@@ -62,14 +62,243 @@
         "Use for 5 houres."
       ],
       "colors": [{
-        "color": "purple",
-        "image": "/assets/images/ps4-red.png"
+        "color": "red",
+        "image": "/assets/images/control-red.png"
       },
       {
-        "color": "blue",
-        "image": "/assets/images/ps4-black.png"
+        "color": "black",
+        "image": "/assets/images/control-black.png"
       }
     ]
+    },
+    {
+      "id": "4",
+      "name": "Televisión LCD Sony",
+      "category": "Electronic",
+      "description": "Television LCD Sony de 50 pulgadas con sonido envolvente con resolucion de 2k",
+      "price": {
+        "original": 400,
+        "current": 360
+      },
+      "features": [
+        "Resolucion de hasta 2k.",
+        "Sonido envolvente por Dolby para un experiencia de audio.",
+        "Pantalla de 50 pulgadas."
+      ],
+      "colors": [{
+        "color": "black",
+        "image": "/assets/images/lcd_television.png"
+      }]
+    },
+    {
+      "id": "5",
+      "name": "Equipo de Sonido Sony",
+      "category": "Electronic",
+      "description": "Equipo de sonido Sony",
+      "price": {
+        "original": 150,
+        "current": 125
+      },
+      "features": [
+        "Equipo de sonido de alta calidad",
+        "De hasta 2000 watts."
+      ],
+      "colors": [{
+        "color": "black",
+        "image": "/assets/images/equipo_de_sonido.png"
+      }]
+    },
+    {
+      "id": "6",
+      "name": "Aire Acondicionado LG",
+      "category": "Electronic",
+      "description": "Aire Acondicionado LG de 12000 BTU",
+      "price": {
+        "original": 300,
+        "current": 250
+      },
+      "features": [
+        "Aire Acondicionado LG de 12000 BTU",
+        "Incluye filtro contra el COVID-19"
+      ],
+      "colors": [{
+        "color": "black",
+        "image": "/assets/images/aire-acondicionado-lg.png"
+      }]
+    },
+    {
+      "id": "7",
+      "name": "Lavadora Samsung",
+      "category": "Electronic",
+      "description": "Alcanzar objetos fácilmente, más capacidad, menos cargas y tratamiento previo sencillo",
+      "price": {
+        "original": 50000,
+        "current": 45000
+      },
+      "features": [
+        "Evita tener que estirarte para sacar la ropa. El diseño EZ Access cuenta con un tambor de mayor diámetro, pero no es tan profundo. Ahora podrás disfrutar de una carga y descarga sin esfuerzo, sin sacrificar ninguna capacidad. Puedes alcanzar fácilmente objetos en cada esquina del tambor con mucho menos esfuerzo o estiramiento doloroso.",
+        "Reduce la frecuencia de uso de tu lavadora, ¡y ahorra tiempo, esfuerzo y agua! Su gran capacidad de 5,0 pies cúbicos permite que puedas lavar más prendas en una sola carga. Incluso puedes lavar prendas más grandes, como un edredón extragrande. Así que puedes dejar de preocuparte por hacer muchos lavado.",
+        "Haz un tratamiento previo de tu ropa sucia de manera fácil y eficiente. Un chorro de agua incorporado te permite prelavar las prendas muy sucias o con manchas. Este chorro se puede poner en funcionamiento y detener con tan solo tocar un botón. Además, evita cualquier movimiento innecesario para que no gotee agua por todas partes."
+      ],
+      "colors": [{
+        "color": "black",
+        "image": "/assets/images/lavadora.png"
+      }]
+    },
+    {
+      "id": "8",
+      "name": "Licuadora Oster",
+      "category": "Electronic",
+      "description": "Esta licuadora con vaso de vidrio de 8 velocidades te da mucha más versatilidad a la hora de preparar licuados, frescas bebidas y comidas con la consistencia ideal.",
+      "price": {
+        "original": 100,
+        "current": 90
+      },
+      "features": [
+        "Potente motor de 450 vatios.",
+        "Jarra de vidrio refractario Boroclass® con capacidad para 6 tazas (1,5 litros), resiste cambios bruscos de temperatura.",
+        "2 pulsos para los que prefieren tener el control de la licuadora a la hora de mezclar.",
+        "Exclusivo sistema de acople totalmente metálico All-Metal Drive, para máxima durabilidad",
+        "Cuchilla picahielo de acero inoxidable",
+        "Los repuestos y accesorios de licuadoras Oster® son universales a cualquier modelo de licuadora Oster® o de centro de cocina Oster®. Para tus licuadoras Oster® Xpert Series™ puedes utilizar un adaptador"
+      ],
+      "colors": [{
+        "color": "red",
+        "image": "/assets/images/licuadora-oster.png"
+      }]
+    },
+    {
+      "id": "9",
+      "name": "Microondas Haier",
+      "category": "Electronic",
+      "description": "Microondas Haier para uso domestico",
+      "price": {
+        "original": 175,
+        "current": 165
+      },
+      "features": [
+        "Microondas Haier para uso domestico."
+      ],
+      "colors": [{
+        "color": "black",
+        "image": "/assets/images/Microondas.png"
+      }]
+    },
+    {
+      "id": "10",
+      "name": "Aspiradora",
+      "category": "Electronic",
+      "description": "Aspiradora Black and Decker",
+      "price": {
+        "original": 300,
+        "current": 275
+      },
+      "features": [
+        "Pasar la aspiradora nunca ha resultado tan fácil con el mando giratorio de 360° que le permite limpiar los pisos y las alfombras rápida y cómodamente.",
+        "Filtro HEPA que mantieneel aire limpio eliminando polvos y alérgenos.",
+        "Indicador de bolsa llena, con una bolsa de tela lavable, que es fácil de vaciar.",
+        "Activa fácilmente el cable retráctil presionando el botón",
+        "Ruedas suaves de goma para evitar marcas en cualquier tipo de piso",
+        "Sistema de Protección Contra Calentamiento Inteli-Fuse™ protege el motor contra recalentamiento y extiende la vida de su aspiradora."
+      ],
+      "colors": [{
+        "color": "black",
+        "image": "/assets/images/aspiradora.png"
+      }]
+    },
+    {
+      "id": "11",
+      "name": "Refrigeradora",
+      "category": "Electronic",
+      "description": "Refrigeradora LG de 6 pies",
+      "price": {
+        "original": 500,
+        "current": 475
+      },
+      "features": [
+        "Refrigeradora LG de 6 pies.",
+        "Pantalla inteligente integrada"
+      ],
+      "colors": [{
+        "color": "black",
+        "image": "/assets/images/refri.png"
+      }]
+    },
+    {
+      "id": "12",
+      "name": "Adidas para mujer",
+      "category": "Shoes",
+      "description": "Zapato deportivo para mujer",
+      "price": {
+        "original": 75,
+        "current": 50
+      },
+      "features": [
+        "Maximo confort gracias al diseño de ajuste al pie",
+        "Producto original."
+      ],
+      "colors": [{
+        "color": "silver",
+        "image": "/assets/images/adidas_tenis.png"
+      }]
+    },
+    {
+      "id": "13",
+      "name": "Tenis Adidas para basketball",
+      "category": "Shoes",
+      "description": "A veces necesitamos un poquito de ayuda para sentirnos los mejores y sacar nuestro máximo. Por eso, los tenis OwnTheGame de adidas son ideales para tus momentos en la cancha. El diseño te permite jugar con un estilo seguro y cómodo, sobresaliendo como nunca.",
+      "price": {
+        "original": 100,
+        "current": 95
+      },
+      "features": [
+        "Cierre con cordones para un ajuste cómodo y personalizado.",
+        "Suela de caucho que brinda estabilidad y adherencia al piso.",
+        "La puntera con protección TPU garantiza un máximo cuidado y ligereza."
+      ],
+      "colors": [{
+        "color": "black",
+        "image": "/assets/images/adidas_basquetbol.png"
+      }]
+    },
+    {
+      "id": "14",
+      "name": "Tenis Adidas para mujer",
+      "category": "Shoes",
+      "description": "Tan ligeros que se te va a olvidar que los tienes puestos, los tenis adidas Hoops 3.0 Low Classic tienen un estilo minimalista inspirado en el calzado de basquetbol con un peso extraordinario. La media suela te brinda una gran amortiguación, mientras que la plantilla te da toda la comodidad que necesitas",
+      "price": {
+        "original": 50,
+        "current": 45
+      },
+      "features": [
+        "Parte superior de piel sintética que garantiza mayor durabilidad.",
+        "Suela de goma que no deja marcas y que es resistente a la abrasión.",
+        "Cierre con cordones para un ajuste cómodo y personalizado.",
+        "Mediasuela fabricada en EVA (Etil-Vinil-Acetato) que distribuye tu peso de manera uniforme."
+      ],
+      "colors": [{
+        "color": "white",
+        "image": "/assets/images/adidas_mujer.png"
+      }]
+    },
+    {
+      "id": "15",
+      "name": "NikeCourt Air Zoom Vapor Pro",
+      "category": "Shoes",
+      "description": "El NikeCourt Air Zoom Vapor Pro toma todo lo que te gusta del NikeCourt Air Zoom Vapor X y lo hace más ligero y con mayor soporte. El diseño de tres capas ofrece transpirabilidad, estabilidad y durabilidad donde más lo necesitas, mientras mantiene el peso al mínimo",
+      "price": {
+        "original": 75,
+        "current": 65
+      },
+      "features": [
+        "La malla duradera ayuda a mantener los pies frescos. El interior de la malla está reforzado donde necesitas soporte adicional. El exterior cuenta con un revestimiento delgado y flexible para brindar mayor durabilidad.",
+        "Las agujetas asimétricas se adaptan al pie durante los movimientos laterales. Los ojales centrales ubicados más cerca de la punta están cubiertos para aumentar la durabilidad durante los deslizamientos.",
+        "La suela de espiguilla es un diseño basado en datos que proporciona un mejor agarre sin afectar tu capacidad para deslizarte. La goma se eliminó de las áreas de poco desgaste para reducir el peso."
+      ],
+      "colors": [{
+        "color": "blue",
+        "image": "/assets/images/nike-azul.png"
+      }]
     }
   ]
 }

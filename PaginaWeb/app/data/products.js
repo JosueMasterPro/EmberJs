@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 export const products = [
   {
     id: '1',
