@@ -36,7 +36,7 @@ export default class ShoppingCartService extends Service {
         ...this.itemList,
         new Item({
           ...item,
-          count: 1,
+          count: 1
         }),
       ];
     }

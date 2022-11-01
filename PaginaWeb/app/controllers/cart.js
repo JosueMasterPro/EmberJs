@@ -17,7 +17,7 @@ export default class CartController extends Controller {
 
   get total() {
     return this.subtotal + this.tax;
-  }
+  } 
 
   @action
   updateItemCount(item, event) {

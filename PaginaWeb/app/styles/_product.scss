@@ -16,6 +16,7 @@
 .product-details {
   padding: 24px 32px;
   width: 60%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -60,6 +61,13 @@
     &.color-purple {
       background: purple;
     }
+    &.color-silver {
+      background: silver;
+    }
+    &.color-white {
+      background: white;
+    }
+
 
 
   }
@@ -81,6 +89,13 @@
 
   .active-purple .color-purple:before {
     border: 1px solid #8A008A;
+  }
+
+  .active-silver .color-silver:before {
+    border: 1px solid silver;
+  }
+  .active-white .color-white:before {
+    border: 1px solid black;
   }
 }
 
@@ -112,6 +127,7 @@
 
 .item-details-page {
   width: 100%;
+  height: auto;
   box-shadow: none;
   border-radius: 0;
 }

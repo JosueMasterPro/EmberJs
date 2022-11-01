@@ -9,22 +9,24 @@
       <i class="fa fa-star"></i>
       <i class="fa fa-star-half-o"></i>
     </div>
-    <h4>{{@category}}</h4>
+    {{!-- <h4>{{@category}}</h4>--}}
   </section>
   {{!-- Price --}}
-<section class={{unless @isDetails 'h4'}}>
-     {{!-- {{#if this.showValue}}
-      <i data-test-current-price class="text-danger font-weight-bold">{{currency @price.current}}</i>--}}
-     {{!-- {{else}}--}}
+  
+    <section class={{unless @isDetails 'h3'}}>
+      {{#if @price.original}}  
         <del data-test-original-price class="small text-black-50">{{currency @price.original}}</del>
         <i data-test-current-price class="text-danger font-weight-bold">{{currency @price.current}}</i>
-     {{!-- {{/if}}--}}
-  </section>
+      {{else}}
+        <i data-test-current-price class="text-danger font-weight-bold">{{currency @price.current}}</i>
+      {{/if}}
 
+    </section>
+ 
   {{#if @isDetails}}
     <div class="d-flex justify-content-between align-items-end">
       <div>
-        <h5>Color</h5>
+        <h3>Color</h3>
         <div class="product-colors active-{{@color}}">
           {{#each @colors as |colorInfo|}}
             <span data-test-color  class="product-color {{concat 'color-' colorInfo.color}}"
@@ -32,12 +34,12 @@
           {{/each}}
         </div>
       </div>
-     {{!--<button
+     <button
         data-test-add-to-cart
         class="btn btn-info" type="button" {{on "click" this.addToCart}}>
         <i class="fa fa-shopping-cart mr-1"></i>
         Add to cart
-      </button>--}}
+      </button>
     </div>
   {{/if}}
 </div>

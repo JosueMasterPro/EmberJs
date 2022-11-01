@@ -41,6 +41,10 @@ export default class IndexController extends Controller {
         if(this.cod.value == 0 || this.cod.value == 1){
             this.Filtros = this.filterItemsbyCategory(this.datos,'');
             this.datos = this.filterItemsbyName(this.Filtros,search.value);
+            /*console.log(this.datos);
+            this.datos.forEach(function(elemento, indice, array) {
+                console.log(elemento.price, indice);
+            })*/
         }
         else{
             this.Filtros = this.filterItemsbyCategory(this.datos,this.cod.value);

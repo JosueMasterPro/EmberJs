@@ -53,7 +53,7 @@
       "category": "Electronic",
       "description": "Experience the power of gaming at your fingertips. The Sony DualShock 4 Wireless Controller for PlayStation 4 enhances your gaming experience",
       "price": {
-        "original": 0,
+        "original": "",
         "current": 50
       },
       "features": [
@@ -298,6 +298,26 @@
       "colors": [{
         "color": "blue",
         "image": "/assets/images/nike-azul.png"
+      }]
+    },
+    {
+      "id": "16",
+      "name": "Samsung BAR Plus Memoria USB 3.1, Plateado 64GB",
+      "category": "Memory",
+      "description": "Memoria de rapido almacenaje, y gran portabilidad",
+      "price": {
+        "original": 0,
+        "current": 65
+      },
+      "features": [
+        "Redefina las transferencias de archivos cotidianas con velocidades de hasta 200 MB/s; Temperatura de funcionamiento: 0~60 ℃",
+        "Almacenamiento confiable y seguro para sus fotos, videos, música y archivos",
+        "Proteja sus datos (a prueba de agua, a prueba de golpes, a prueba de imanes, a prueba de temperatura, a prueba de rayos X)",
+        "Unidad flash USB 3.1 con compatibilidad con versiones anteriores (USB 3.0, USB 2.0)"
+      ],
+      "colors": [{
+        "color": "silver",
+        "image": "/assets/images/Samsung-Memoria-64gb-silver.jpg"
       }]
     }
   ]
