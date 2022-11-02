@@ -10,3 +10,25 @@
       }
     }
   }
+.ItemCount{
+ position: relative;
+  float: right;
+  margin: 5px;
+  color: black;
+  top: -3px;
+  
+}
+.ItemCount:hover {
+  cursor:pointer;
+}
+.ItemCountless{
+  position: relative;
+  float: right;
+  margin: 5px;
+  color: black;
+  top: 15px;
+  left: -25px;
+}
+.ItemCountless:hover {
+  cursor:pointer;
+}
