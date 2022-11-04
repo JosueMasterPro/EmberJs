@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import Helper from '@ember/component/helper';
 
 export default class currency extends Helper {

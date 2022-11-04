@@ -10,7 +10,8 @@
   </ol>
 
    {{#each this.cart.itemList as |item|}}
-    <div class="cart-item d-flex align-items-center">
+    <div class="cart-item d-flex align-items-center border border-dark redondo">
+      <i class="DeleteItem fa fa-trash-o" aria-hidden="true"></i>
       <div class="cart-item-thumbnail">
         <img src={{item.image}} alt="">
       </div>

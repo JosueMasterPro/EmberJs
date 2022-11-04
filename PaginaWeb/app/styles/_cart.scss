@@ -32,3 +32,18 @@
 .ItemCountless:hover {
   cursor:pointer;
 }
+.DeleteItem{
+  position: relative;
+   float: right;
+   margin: 5px;
+   color: red;
+   top: -50px;
+   font-size: 25px;
+ }
+ .DeleteItem:hover {
+   cursor:pointer;
+ }
+ .redondo{
+  border-radius: 1em;
+  margin-bottom: 20px;
+ }
