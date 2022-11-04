@@ -1,4 +1,4 @@
-<main class="container mt-5">
+<main class="container mt-5 mb-3">
   <h1>Shopping Cart</h1>
   <ol class="breadcrumb">
     <li class="breadcrumb-item">
@@ -13,22 +13,22 @@
     <div class="cart-item d-flex align-items-center border border-dark redondo">
       <i class="DeleteItem fa fa-trash-o" aria-hidden="true"></i>
       <div class="cart-item-thumbnail">
-        <img src={{item.image}} alt="">
+        <img class="img-fluid" src={{item.image}} alt="">
       </div>
-      <div class="ml-3">
-        <h4>{{item.name}}</h4>
+      <div class="ml-3 p-3">
+        <h4 class="fs-1 fw-bold">{{item.name}}</h4>
         <i class="font-weight-bold">{{currency item.price}}</i><br>
         <i class="font-weight-bold">{{item.category}}</i>
       </div>
     <input id="input-{{item.name}}-{{item.color}}"
       type="number"
-      class="ml-auto"
+      class="ml-auto form-control input-cart m-1"
       value={{item.count}}
       readonly
       {{!--{{on "input" (fn this.updateItemCount item)}}--}}
     >
-    <h5><i class="fa fa-plus ItemCount" {{on "click" (fn this.ItemCount item)}}></i></h5>
-    <h5><i class="fa fa-minus ItemCountless" {{on "click" (fn this.ItemCountless item)}} aria-hidden="true"></i></h5>
+    <h5><i class="fa fa-plus ItemCount m-1" {{on "click" (fn this.ItemCount item)}}></i></h5>
+    <h5><i class="fa fa-minus ItemCountless m-1" {{on "click" (fn this.ItemCountless item)}} aria-hidden="true"></i></h5>
     </div>
   {{/each}}
   

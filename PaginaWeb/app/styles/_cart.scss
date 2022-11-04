@@ -10,40 +10,49 @@
       }
     }
   }
+.DeleteItem{
+    position: relative;
+    float: inherit;
+     margin: 5px;
+     color: red;
+     top: 0px;
+     font-size: 25px;
+   }
+   .DeleteItem:hover {
+     cursor:pointer;
+   }
+   /*Sumar productos*/
 .ItemCount{
  position: relative;
   float: right;
-  margin: 5px;
   color: black;
   top: -3px;
-  
+  left: 0px;
 }
 .ItemCount:hover {
   cursor:pointer;
 }
+/*Restar productos*/
 .ItemCountless{
   position: relative;
-  float: right;
-  margin: 5px;
   color: black;
   top: 15px;
-  left: -25px;
+  left: -24px;
 }
 .ItemCountless:hover {
   cursor:pointer;
 }
-.DeleteItem{
-  position: relative;
-   float: right;
-   margin: 5px;
-   color: red;
-   top: -50px;
-   font-size: 25px;
- }
- .DeleteItem:hover {
-   cursor:pointer;
- }
- .redondo{
+
+.redondo{
   border-radius: 1em;
   margin-bottom: 20px;
+ }
+/*el input para la cantidad de productos*/
+.input-cart{
+  position: relative;
+  float: right;
+  left: 0px;
+  max-width:10%;
+  min-width: 1%;
+  text-align: center;
  }
