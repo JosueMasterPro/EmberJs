@@ -41,22 +41,23 @@ export default class ShoppingCartService extends Service {
       ];
     }
   }
-  /*
   RemoveItem(item) {
-    const existingItem = this.itemList.find(({ name, color, category }) => {
-    ;leer mas sobre el .slice para eliminar un item, el item es el de la lista de esta pagina, todo
-    esta aqui, en el cart js, solo hay que pasarle el nombre  y el color para que aqui lo busque.
-    });
-    if (existingItem) {
-      existingItem.count -= 1;
-    } else {
-      this.itemList = [
-        ...this.itemList,
-        new Item({
-          ...item,
-          count: 1
-        }),
-      ];
+    console.log("shopping-cart " + this.itemList.length);
+    var x = 0
+    for( x; x < this.itemList.length;x++){
+      const existingItem = this.itemList.find(({ name, color }) => {
+        return (
+          name === item.name && color === item.color
+        );
+      });
+      if(this.itemList[x].name === item.name){
+        console.log(this.itemList[x].name);
+        this.itemList.splice(x,1);
+        console.log("item");
+        console.log(this.itemList);
+      }
+
     }
-  }*/
+
+  }
 }

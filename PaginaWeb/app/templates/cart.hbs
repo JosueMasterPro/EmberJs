@@ -9,9 +9,9 @@
     <li class="breadcrumb-item">Shopping Cart</li>
   </ol>
 
-   {{#each this.cart.itemList as |item|}}
+   {{#each this.Items as |item|}}
     <div class="cart-item d-flex align-items-center border border-dark redondo">
-      <i id="Delete-{{item.name}}-{{item.color}}" class="DeleteItem fa fa-trash-o" aria-hidden="true" {{on "click" this.removeToCart}}></i>
+      <i id="Delete-{{item.name}}-{{item.color}}" class="DeleteItem fa fa-trash-o" aria-hidden="true" {{on "click" (fn this.removeFromCart item)}}></i>
       <div class="cart-item-thumbnail">
         <img class="img-fluid" src={{item.image}} alt="">
       </div>

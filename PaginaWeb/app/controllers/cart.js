@@ -1,12 +1,11 @@
 import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
 import { action } from '@ember/object';
+import { tracked } from '@glimmer/tracking';
 
 export default class CartController extends Controller {
   @service('shopping-cart') cart;
-
   cod = '';
-  remove="";
   get subtotal() {
     return this.cart.itemList.reduce((acc, item) => {
       return acc + item.price * item.count;
@@ -20,6 +19,10 @@ export default class CartController extends Controller {
   get total() {
     return this.subtotal + this.tax;
   } 
+  get Items(){
+    return this.cart.itemList;
+  }
+  cod = document.getElementById("input1");
 
   @action
   updateItemCount(item, event) {
@@ -31,10 +34,6 @@ export default class CartController extends Controller {
       item.count = 0;
     }
   }
-
-  cod = document.getElementById("input1");
-  remove = document.getElementById("i");
-  Suma = 1;
   @action
   ItemCount(item, event) {
     this.cod = document.getElementById("input-" + item.name + "-"+item.color);
@@ -54,18 +53,12 @@ export default class CartController extends Controller {
       item.count = 0;
     }
   }
-  /*
   @action 
-  removeToCart(item, event) {
-    this.remove = document.getElementById(("delete-" + item.name + "-"+item.color));
-    name=item.name;
-    this.cart.addItem({
-      name,
-      category,
-      color,
-      image: colors.find((colorInfo) => colorInfo.color === color).image,
-      price: price.current,
+  removeFromCart(item,event) {
+    this.cart.RemoveItem({
+      name: item.name,
+      color: item.color,
     });
-  }*/
-
+    
+  }
 }
