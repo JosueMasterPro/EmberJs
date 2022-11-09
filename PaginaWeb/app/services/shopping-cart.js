@@ -42,7 +42,6 @@ export default class ShoppingCartService extends Service {
     }
   }
   RemoveItem(item) {
-    console.log("shopping-cart " + this.itemList.length);
     var x = 0
     for( x; x < this.itemList.length;x++){
       const existingItem = this.itemList.find(({ name, color }) => {
@@ -51,13 +50,10 @@ export default class ShoppingCartService extends Service {
         );
       });
       if(this.itemList[x].name === item.name){
-        console.log(this.itemList[x].name);
-        this.itemList.splice(x,1);
-        console.log("item");
-        console.log(this.itemList);
+        if(this.itemList[x].color === item.color){
+          return this.itemList.splice(x,1);
+        }
       }
-
     }
-
   }
 }

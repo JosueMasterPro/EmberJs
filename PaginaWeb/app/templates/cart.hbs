@@ -11,7 +11,7 @@
 
    {{#each this.Items as |item|}}
     <div class="cart-item d-flex align-items-center border border-dark redondo">
-      <i id="Delete-{{item.name}}-{{item.color}}" class="DeleteItem fa fa-trash-o" aria-hidden="true" {{on "click" (fn this.removeFromCart item)}}></i>
+        <i id="Delete-{{item.name}}-{{item.color}}" class="DeleteItem fa fa-trash-o" aria-hidden="true" {{on "click" (fn this.removeFromCart item)}}></i>
       <div class="cart-item-thumbnail">
         <img class="img-fluid" src={{item.image}} alt="">
       </div>

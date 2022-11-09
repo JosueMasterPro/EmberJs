@@ -5,9 +5,10 @@ import { tracked } from '@glimmer/tracking';
 
 export default class CartController extends Controller {
   @service('shopping-cart') cart;
+  @tracked lista = '';
   cod = '';
-  get subtotal() {
-    return this.cart.itemList.reduce((acc, item) => {
+  get subtotal() { 
+    return this.lista.reduce((acc, item) => {
       return acc + item.price * item.count;
     }, 0);
   }
@@ -20,14 +21,15 @@ export default class CartController extends Controller {
     return this.subtotal + this.tax;
   } 
   get Items(){
-    return this.cart.itemList;
+    this.lista = this.cart.itemList;
+    return this.lista
   }
   cod = document.getElementById("input1");
-
+  Suma=1;
   @action
   updateItemCount(item, event) {
     const count = event.target.value;
-    console.log(count);
+
     if (count >= 0) {
       item.count = count;
     } else {
@@ -37,7 +39,6 @@ export default class CartController extends Controller {
   @action
   ItemCount(item, event) {
     this.cod = document.getElementById("input-" + item.name + "-"+item.color);
-    console.log(item.name);
     if (this.cod.value >= 0) {
       item.count = parseFloat(this.cod.value) + parseFloat(this.Suma)
     } else {
@@ -54,11 +55,12 @@ export default class CartController extends Controller {
     }
   }
   @action 
-  removeFromCart(item,event) {
+  removeFromCart(item,event){
     this.cart.RemoveItem({
       name: item.name,
       color: item.color,
     });
-    
+    this.Items;
+    this.subtotal
   }
 }
