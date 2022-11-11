@@ -8,6 +8,5 @@ export default class IndexRoute extends Route {
 
   async model() {
     const data = await this.store.findAll('product');
-
   }
 }

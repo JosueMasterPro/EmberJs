@@ -47,8 +47,12 @@
     </div>
   </section>
 
-  <button type="button" class="btn btn-success float-right">
-    Check out
-  </button>
+    {{#if this.Items}}
+      <LinkTo @route="payment" >
+      <button type="button" class="btn btn-success float-right">
+          Check out
+        </button>
+      </LinkTo>
+      {{/if}}
   <br><br>
 </main>
