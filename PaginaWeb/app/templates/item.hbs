@@ -1,5 +1,6 @@
 <GeneralContainer>
   <ol class="breadcrumb">
+    {{!-- nos permite regresar al home --}}
     <li class="breadcrumb-item">
       <LinkTo @route="index">
         Home
@@ -8,6 +9,7 @@
     <li class="breadcrumb-item">{{this.model.name}}</li>
   </ol>
   <div class="product item-details-page {{if this.isZoomed 'is-zoomed'}}">
+    {{!-- agregamos los componentes de imagenes y los detalles del productos dependiendo el item que hayamos seleccionado --}}
     <Product::Image
       @src={{this.productImage}}
       @toggleZoom={{this.toggleZoom}}
@@ -26,6 +28,7 @@
   </div>
   <h4 class="mt-5">Features</h4>
   <ul>
+    {{!-- muestra las caracteristicas en forma de lista, la informacion se almacena en la api y json--}}
     {{#each this.model.features as |feature|}}
       <li>{{feature}}</li>
     {{/each}}

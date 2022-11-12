@@ -1,5 +1,7 @@
+{{!-- componente contenedor en general --}}
 <LinkTo @route="cart" class="cart-link">
   <i class="fa fa-shopping-cart"></i>
+    {{!-- sirve para solo mostrar la notificacion cuando no esta vacia la lista --}}
    {{#if this.shoppingCart.itemList.length}}
     <span data-test-cart-count
     class="cart-count d-inline-flex justify-content-center align-items-center">
@@ -8,5 +10,6 @@
   {{/if}}
 </LinkTo>
 <main class="container mt-5">
+  {{!-- sirve para parar o reanudar una funcion generadora --}}
  {{yield}}
 </main>

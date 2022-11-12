@@ -1,4 +1,6 @@
+{{!-- este es un componente creado que nos lleva a los productos --}}
 <LinkTo
+{{!-- detallamos el origen de la imagenes al componente --}}
    data-test-product={{@product.id}}
     @route="item" @model={{@product.id}} class="product">
     <Product::Image @src={{this.productImage}} 

@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+//este archivo ya no se usa
 export const products = [
   {
     id: '1',

@@ -2,9 +2,12 @@
   <center>
     <div class="input-group mb-3 w-75">
       <div class="input-group-prepend">
+        {{!-- boton de buscar para hacer flitros por nombre --}}
         <button id="button" class="btn btn-outline-secondary" style="width: 50px;" type="button" {{on "click" this.filter}}><i class="fa fa-search"></i></button>
       </div>
+      {{!-- aqui ingresamos el nombre del producto que buscamos --}}
       <input name="search"  id="search" type="text" class="form-control" placeholder="Search" style="width: 100px;" aria-describedby="basic-addon1" {{on "input" this.filter}}>
+      {{!-- seleccion de la categoria para filtrar los productos --}}
       <select class="form-select form-select-sm " id="category" {{on "input" this.ComboBox}}>
         <option selected="" value="0">Seleccion Categoria</option>
         <option value="1">Todas las Categorias</option>
@@ -15,6 +18,7 @@
     </select>
     </div>
   </center>
+  {{!-- muestra los productos de la lista --}}
   {{#each this.Product as |product|}}
     <Product @product={{product}}/>
   {{/each}}
