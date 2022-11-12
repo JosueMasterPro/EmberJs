@@ -1,7 +1,6 @@
-payment
-<main>
-  <h1>Facturacion</h1>
-  <ol class="breadcrumb">
+<main class="mx-4 mt-5 mb-3">
+  <h1 class="container">Facturacion</h1>
+  <ol class="breadcrumb container">
     <li class="breadcrumb-item">
       <LinkTo @route="index">
         Home
@@ -18,33 +17,128 @@ payment
     <div class="card border-0">
       <div class="card-body">
           <h4 class="card-title">Metodo De Pago</h4>
-          <div class="card-body">
+          <div class="card-body p-0">
               <div class="Select-Method">
                   <ul class="list-group">
-                      <li class="list-group-item mouse active" id="tarjeta"{{on "click" this.Metodo1}}><h3><i class="fa fa-circle" style="font-size: 20px;" aria-hidden="true"></i> Tarjeta de Credito</h3></li>
+                      <li class="list-group-item mouse active" id="tarjeta"{{on "click" this.Metodo1}}><span class="h5"><i class="fa fa-circle" style="font-size: 20px;" aria-hidden="true"></i> Tarjeta de Credito</span></li>
                         <div class="tab-content bg-light border-left border-bottom border-right" id="Contenido-tarjeta">
-                          <div class="tab-pane fade show active" id="tarjeta-pago" role="tabpanel" aria-labelledby="tarjeta">
-                            <h4 class="list-group-item-heading">Tarjeta</h4>
-                            <div class="list-group-item-text">...</div>
+                          <div class="tab-pane m-3 fade show active" id="tarjeta-pago" role="tabpanel" aria-labelledby="tarjeta">
+                            <h4 class="list-group-item-heading clas">Agregar Tarjeta</h4>
+                            <div class="list-group-item-text">
+                              <form action="" class="credit-card-div">
+                                <div class="panel panel-default" >
+                                  <div class="panel-heading">  
+                                      <div class="row ">
+                                        <div class="col-md-12">
+                                          <input type="text" class="form-control" placeholder="Enter Card Number" />
+                                        </div>
+                                      </div>
+                                      <div class="row pl-2">
+                                          <div class="col-md-3 col-sm-3 col-xs-3 p-1 text-center">
+                                            <span class="help-block text-muted small-font" > Expiry Month</span>
+                                            <input type="text" class="form-control texto" placeholder="MM" />
+                                          </div>
+                                          <div class="col-md-3 col-sm-3 col-xs-3 p-1 text-center">
+                                            <span class="help-block text-muted small-font" >  Expiry Year</span>
+                                            <input type="text" class="form-control texto" placeholder="YY" />
+                                          </div>
+                                          <div class="col-md-3 col-sm-3 col-xs-3 p-1 text-center">
+                                            <span class="help-block text-muted small-font" >  CCV</span>
+                                            <input type="text" class="form-control texto" placeholder="CCV" />
+                                          </div>
+                                          <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <img src="/assets/images/tarjeta-Credito.png" class="rounded mx-auto d-block img-fluid" />
+                                          </div>
+                                      </div>
+                                    <div class="row ">
+                                      <div class="col-md-12 pad-adjust">
+                                        <input type="text" class="form-control" placeholder="Name On The Card" />
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-12 pad-adjust">
+                                        <div class="checkbox">
+                                          <label>
+                                            <input type="checkbox" checked class="text-muted"> Save details for fast payments <a href="#"> learn how ?</a>
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row ">
+                                      <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                                        
+                                      </div>
+                                      <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                                        <input type="submit"  class="btn btn-warning btn-block" value="PAY NOW" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
                           </div>
                         </div>
-                      <li class="list-group-item mouse" id="paypal" {{on "click" this.Metodo2}}><h3><i class="fa fa-circle" style="font-size: 20px; " aria-hidden="true"></i> Paypal</h3></li>
+                      <li class="list-group-item mouse" id="paypal" {{on "click" this.Metodo2}}><span class="h5"><i class="fa fa-circle" style="font-size: 20px; " aria-hidden="true"></i> Paypal</span></li>
                         <div class="tab-content bg-light border-left border-bottom border-right" id="Contenido-paypal">
-                          <div class="tab-pane fade" id="paypal-pago" role="tabpanel" aria-labelledby="paypal">
+                          <div class="tab-pane m-3 fade" id="paypal-pago" role="tabpanel" aria-labelledby="paypal">
                             <h4 class="list-group-item-heading">Paypal</h4>
-                            <div class="list-group-item-text">...</div>
+                            <div class="list-group-item-text">
+                              <form action="" class="credit-card-div">
+                                <div class="panel panel-default" >
+                                  <div class="panel-heading">  
+                                      <div class="row ">
+                                        <div class="col-md-12">
+                                          <span class="h6">Correo Electronico</span>
+                                          <input type="text" class="form-control" placeholder="ejemplo: prueba@mail.com" />
+                                        </div>
+                                      </div>
+                                    <div class="row ">
+                                      <div class="col-md-12 pad-adjust">
+                                        <span class="h6">Contraseña</span>
+                                        <input type="password" class="form-control"  />
+                                      </div>
+                                    </div><br/>
+                                    <div class="row ">
+                                      <div class="col-md-12">
+                                        <input type="submit"  class="btn btn-primary btn-block" value="Iniciar Sesion" />
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-12 pad-adjust">
+                                        <div class="checkbox">
+                                          <label>
+                                            <input type="checkbox" checked class="text-muted"> Save details for fast payments <a href="#"> learn how ?</a>
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row ">
+                                      <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                                                                              
+                                      </div>
+                                      <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                                        <input type="submit"  class="btn btn-warning btn-block" value="PAY NOW" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
                           </div>
                         </div>
                   </ul>
                 </div>
             </div>
+            
         </div>
       </div>
     <div class="card border-0">
       <div class="card-body">
-        <h4 class="card-title">Total A Pagar</h4>
-        <div class="card-text">
-            <section class="w-50 ml-auto text-right mb-5">
+        <div class="card-body">
+        </div>
+        <div class="card-footer">
+            <h4 class="card-title">Total A Pagar</h4>
+            <section class="w-75 ml-auto text-right mb-5">
               <div class="row">
                 <span class="col">Subtotal</span>
               <span class="col">{{currency this.subtotal}}</span>

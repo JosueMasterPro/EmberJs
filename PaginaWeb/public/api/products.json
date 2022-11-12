@@ -53,7 +53,7 @@
       "category": "Electronic",
       "description": "Experience the power of gaming at your fingertips. The Sony DualShock 4 Wireless Controller for PlayStation 4 enhances your gaming experience",
       "price": {
-        "original": "",
+        "original": 0,
         "current": 50
       },
       "features": [
@@ -132,8 +132,8 @@
       "category": "Electronic",
       "description": "Alcanzar objetos fácilmente, más capacidad, menos cargas y tratamiento previo sencillo",
       "price": {
-        "original": 50000,
-        "current": 45000
+        "original": 500,
+        "current": 450
       },
       "features": [
         "Evita tener que estirarte para sacar la ropa. El diseño EZ Access cuenta con un tambor de mayor diámetro, pero no es tan profundo. Ahora podrás disfrutar de una carga y descarga sin esfuerzo, sin sacrificar ninguna capacidad. Puedes alcanzar fácilmente objetos en cada esquina del tambor con mucho menos esfuerzo o estiramiento doloroso.",

@@ -35,5 +35,4 @@ export default class PaymentController extends Controller {
         document.getElementById('paypal-pago').classList.add('show','active','m-3');
         
     }
-
 }
