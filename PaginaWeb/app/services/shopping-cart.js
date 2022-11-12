@@ -43,12 +43,7 @@ export default class ShoppingCartService extends Service {
   }
   RemoveItem(item) {
     var x = 0
-    for( x; x < this.itemList.length;x++){
-      const existingItem = this.itemList.find(({ name, color }) => {
-        return (
-          name === item.name && color === item.color
-        );
-      });
+    for(x; x < this.itemList.length;x++){
       if(this.itemList[x].name === item.name){
         if(this.itemList[x].color === item.color){
           return this.itemList.splice(x,1);
