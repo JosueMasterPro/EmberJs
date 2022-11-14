@@ -30,14 +30,9 @@ export default class IndexController extends Controller {
     };
         search = document.querySelector('#search');
         cod = document.getElementById("category");
-        
+        //Funcion para mostrar todos los productos en el index.hbs
     get Product(){ 
         return this.datos;
-    }
-
-    @action
-    filter() {
-        this.ComboBox();
     }
     //accion que nos permite filtrar por categoria y traer la lista de items que pertenezcan a la misma
     @action

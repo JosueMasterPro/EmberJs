@@ -31,7 +31,6 @@
       class="ml-auto form-control input-cart m-1"
       value={{item.count}}
       readonly
-      {{!--{{on "input" (fn this.updateItemCount item)}}--}}
     >
     {{!-- botones de sumar y restar productos --}}
     <h5><i class="fa fa-plus ItemCount m-1" {{on "click" (fn this.ItemCount item)}}></i></h5>
@@ -39,7 +38,7 @@
     </div>
   {{/each}}
   
-
+ {{!-- seccion del subtotal y total a pagar --}}
   <section class="w-50 ml-auto text-right mb-5">
     <div class="row">
       <span class="col">Subtotal</span>
