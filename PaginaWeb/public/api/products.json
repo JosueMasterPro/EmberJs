@@ -20,11 +20,11 @@
       ],
       "colors": [{
           "color": "red",
-          "image": "/assets/images/beats-solo-red.png"
+          "image": "./assets/images/beats-solo-red.png"
         },
         {
           "color": "black",
-          "image": "/assets/images/beats-solo-black.png"
+          "image": "./assets/images/beats-solo-black.png"
         }
       ]
     },
