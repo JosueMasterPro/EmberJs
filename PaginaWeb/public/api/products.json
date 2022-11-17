@@ -24,7 +24,7 @@
         },
         {
           "color": "black",
-          "image": "/assets/images/beats-solo-black.png"
+          "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/beats-solo-black.png"
         }
       ]
     },
@@ -44,7 +44,7 @@
       ],
       "colors": [{
         "color": "white",
-        "image": "/assets/images/nike-af1-white.png"
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/nike-af1-white.png"
       }]
     },
     {
@@ -63,11 +63,11 @@
       ],
       "colors": [{
         "color": "red",
-        "image": "/assets/images/control-red.png"
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/control-red.png"
       },
       {
         "color": "black",
-        "image": "/assets/images/control-black.png"
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/control-black.png"
       }
     ]
     },
@@ -87,7 +87,7 @@
       ],
       "colors": [{
         "color": "black",
-        "image": "/assets/images/lcd_television.png"
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/lcd_television.png"
       }]
     },
     {
@@ -105,7 +105,7 @@
       ],
       "colors": [{
         "color": "black",
-        "image": "/assets/images/equipo_de_sonido.png"
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/equipo_de_sonido.png"
       }]
     },
     {
@@ -123,7 +123,7 @@
       ],
       "colors": [{
         "color": "black",
-        "image": "/assets/images/aire-acondicionado-lg.png"
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/aire-acondicionado-lg.png"
       }]
     },
     {
@@ -142,7 +142,7 @@
       ],
       "colors": [{
         "color": "black",
-        "image": "/assets/images/lavadora.png"
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/lavadora.png"
       }]
     },
     {
@@ -164,7 +164,7 @@
       ],
       "colors": [{
         "color": "red",
-        "image": "/assets/images/licuadora-oster.png"
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/licuadora-oster.png"
       }]
     },
     {
@@ -181,7 +181,7 @@
       ],
       "colors": [{
         "color": "black",
-        "image": "/assets/images/Microondas.png"
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/Microondas.png"
       }]
     },
     {
@@ -203,7 +203,7 @@
       ],
       "colors": [{
         "color": "black",
-        "image": "/assets/images/aspiradora.png"
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/aspiradora.png"
       }]
     },
     {
@@ -221,7 +221,7 @@
       ],
       "colors": [{
         "color": "black",
-        "image": "/assets/images/refri.png"
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/refri.png"
       }]
     },
     {
@@ -239,7 +239,7 @@
       ],
       "colors": [{
         "color": "silver",
-        "image": "/assets/images/adidas_tenis.png"
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/adidas_tenis.png"
       }]
     },
     {
@@ -258,7 +258,7 @@
       ],
       "colors": [{
         "color": "black",
-        "image": "/assets/images/adidas_basquetbol.png"
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/adidas_basquetbol.png"
       }]
     },
     {
@@ -278,7 +278,7 @@
       ],
       "colors": [{
         "color": "white",
-        "image": "/assets/images/adidas_mujer.png"
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/adidas_mujer.png"
       }]
     },
     {
@@ -297,7 +297,7 @@
       ],
       "colors": [{
         "color": "blue",
-        "image": "/assets/images/nike-azul.png"
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/nike-azul.png"
       }]
     },
     {
@@ -317,7 +317,7 @@
       ],
       "colors": [{
         "color": "silver",
-        "image": "/assets/images/Samsung-Memoria-64gb-silver.jpg"
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/Samsung-Memoria-64gb-silver.jpg"
       }]
     }
   ]
