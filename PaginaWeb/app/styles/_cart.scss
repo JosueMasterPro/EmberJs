@@ -67,3 +67,16 @@
 .credit-card-div img { padding-top:1px; }
 .credit-card-div .small-font { font-size:11px; }
 .texto{ font-size: 9px; text-align: center;}
+
+@media screen and (max-width: 575px){
+  .tarjeta-credito{
+    position: relative;
+    top:40px;
+    width: 100px;
+    height: 100px;
+  }
+  .namecard{
+    position: relative;
+    top: -87px;
+  }
+}
