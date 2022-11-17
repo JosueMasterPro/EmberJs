@@ -1,16 +1,14 @@
 <GeneralContainer>
   <center>
-    <div class="input-group mb-3 w-75">
+    <div class="input-group input-group-md mb-3 ">
       <div class="input-group-prepend">
         {{!-- boton de buscar para hacer flitros por nombre --}}
         <button id="button" class="btn btn-outline-secondary" style="width: 50px;" type="button" {{on "input" this.ComboBox}}><i class="fa fa-search"></i></button>
       </div>
       {{!-- aqui ingresamos el nombre del producto que buscamos --}}
-      <div class="input-group-prepend">
-        <input name="search"  id="search" type="text" class="form-control " placeholder="Search" style="width: 300px;" aria-describedby="basic-addon1" {{on "input" this.ComboBox}}>
-      </div>
+        <input name="search"  id="search" type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon1" {{on "input" this.ComboBox}}>
       {{!-- seleccion de la categoria para filtrar los productos --}}
-      <div class="input-group-prepend">
+      <div class="input-group-append">
         <select class="form-select form-select-sm " id="category" {{on "input" this.ComboBox}}>
           <option selected="" value="0">Seleccion Categoria</option>
           <option value="1">Todas las Categorias</option>
