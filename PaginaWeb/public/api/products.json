@@ -20,7 +20,7 @@
       ],
       "colors": [{
           "color": "red",
-          "image": "/assets/images/beats-solo-red.png"
+          "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/beats-solo-red.png"
         },
         {
           "color": "black",
