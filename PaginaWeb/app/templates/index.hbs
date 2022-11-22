@@ -3,10 +3,10 @@
     <div class="input-group input-group-md mb-3" style="width: 90%;">
       <div class="input-group-prepend">
         {{!-- boton de buscar para hacer flitros por nombre --}}
-        <button id="button" class="btn btn-outline-secondary" style="width: 50px;" type="button" {{on "input" this.ComboBox}}><i class="fa fa-search"></i></button>
+        <button id="button" class="btn btn-outline-secondary" style="width: 50px;" type="button" {{on "click" this.ComboBox}} {{on "click" this.pagCate}}><i class="fa fa-search"></i></button>
       </div>
       {{!-- aqui ingresamos el nombre del producto que buscamos --}}
-        <input name="search"  id="search" type="text" class="form-control input-search" placeholder="Search" aria-describedby="basic-addon1" {{on "input" this.ComboBox}}>
+        <input name="search"  id="search" type="text" class="form-control input-search" placeholder="Search" aria-describedby="basic-addon1" >
       {{!-- seleccion de la categoria para filtrar los productos --}}
       <div class="input-group-append">
         <select class="form-select form-select-sm Categoria" id="category" {{on "input" this.ComboBox}} {{on "change" this.pagCate}}>

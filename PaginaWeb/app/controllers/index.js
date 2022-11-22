@@ -19,7 +19,7 @@ export default class IndexController extends Controller {
     page2 = 0;
     page3 = 0;
     page4 = 0;
-    num=1
+    num = 1;
     //este filtra por nombre que se escribe e el input
     filterItemsbyName = (Data,query) => {
         return Data.filter(
@@ -87,6 +87,8 @@ export default class IndexController extends Controller {
             this.num=0;
         }
     }
+    //funcion que es la misca que cargar, nada mas que la cargar esta conectada al mouse move y solo se necesita usar 1 vez
+    //entonces aqui hace similar y carga al cambiar la categoria y usar el boton
     @action
     pagCate(){
             //Cargar la pagina 1 al principio
@@ -137,6 +139,7 @@ export default class IndexController extends Controller {
             this.page3 = 0;
             this.page4 = 0;
     }
+
     //accion que nos permite filtrar por categoria y traer la lista de items que pertenezcan a la misma
     @action
     ComboBox() {
@@ -151,6 +154,8 @@ export default class IndexController extends Controller {
             this.Filtros = this.filterItemsbyCategory(this.datos,this.cod.value);
             this.datos = this.filterItemsbyName(this.Filtros,search.value);
         }
+        
+        
     }
     
 
