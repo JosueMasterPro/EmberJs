@@ -195,14 +195,14 @@ export default class IndexController extends Controller {
         if(this.page3 == 0){
             const lastindex = this.datos.length - 1;
             const Pagina = [];
-            if(lastindex > 11 && lastindex <= 18){
-                for(var x = 12; x <= lastindex ;x++){
-                    Pagina[x-12] = this.datos[x];
+            if(lastindex > 18 && lastindex <= 24){
+                for(var x = 18; x <= lastindex ;x++){
+                    Pagina[x-18] = this.datos[x];
                 };
             }
             else{
-                for(var x = 12; x <= 17;x++){
-                    Pagina[x-12] = this.datos[x];
+                for(var x = 18; x <= 23;x++){
+                    Pagina[x-18] = this.datos[x];
                 };
             }
             this.datos = Pagina;

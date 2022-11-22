@@ -343,6 +343,31 @@
         "color": "black",
         "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/adidas_run.png"
       }]
+    },
+    {
+      "id": "18",
+      "name": "Reebok Men's Club MEMT Casual Sneakers",
+      "category": "Shoes",
+      "description": "Reebok es una marca global de inspiración estadounidense con una profunda herencia de fitness y una misión clara: ser la mejor marca de fitness del mundo. No es fácil. Pero si hay una marca que puede hacer que suceda, es Reebok, la marca que fue fundamentalmente parte de un movimiento de fitness que cambió para siempre la forma en que vemos el spandex y las cintas para la cabeza. Claro, esto ya no es la década de 1980: el mundo ha avanzado. Pero también lo ha hecho Reebok y sigue siendo atrevida. Atreverse es saber que la grandeza no proviene de la uniformidad. Los últimos años se han caracterizado por una transformación de los deportes tradicionales al fitness. Los tres lados del delta de Reebok, un símbolo de cambio y transformación, representan los cambios físicos, mentales y sociales que ocurren cuando las personas aceptan el desafío de mejorar en el gimnasio, en sus vidas y en el mundo.",
+      "price": {
+        "original": 0,
+        "current": 100
+      },
+      "features": [
+        "100% cuero",
+        "Imported",
+        "Suela de Goma",
+        "El eje mide aproximadamente low-top desde el arco",
+        "Material duradero y ligero: estos zapatos clásicos cuentan con una parte superior de piel suave con perforaciones en la puntera para mayor comodidad y ventilación; las superposiciones cosidas agregan un toque simple.",
+        "Moderno y estilizado: estos zapatos elegantes están diseñados para brindar comodidad y estilo duradero.",
+        "Plantilla extraíble: este calzado cuenta con una plantilla Memory Tech para una sensación suave y un acolchado adicional para un ajuste aún más personalizado.",
+        "Diseño cómodo y resistente: diseño de corte bajo para una mayor movilidad de los tobillos por lo que te mantiene en movimiento todo el día.",
+        "Zapatos casuales de alto rendimiento: ideales para largos paseos, correr y senderismo."
+      ],
+      "colors": [{
+        "color": "white",
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/reebok_sport.png"
+      }]
     }
   ]
 }
