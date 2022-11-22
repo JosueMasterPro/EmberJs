@@ -40,7 +40,44 @@ export default class IndexController extends Controller {
     cargar(){
         if(this.num == 1){
             //poner los botones segun la cantidad de productos que tengamos
-            this.pag1();
+            const lastindex = this.datos.length - 1;
+            const Pagina = [];
+            if(lastindex < 6 ){
+                for(var x = 0; x <= lastindex ;x++){
+                    Pagina[x] = this.datos[x];
+                };
+            }
+            else{
+                for(var x = 0; x < 6;x++){
+                    Pagina[x] = this.datos[x];
+                };
+            }
+            this.datos = Pagina;
+            document.getElementById('page1').classList.remove('d-none');
+            document.getElementById('page1').classList.add('active');
+            document.getElementById('page2').classList.remove('active');
+            document.getElementById('page3').classList.remove('active');
+            this.page1 = 1;
+            if(lastindex < 6){
+                document.getElementById('page1').classList.remove('d-none');
+            }
+            else if( lastindex > 6 && lastindex < 12){
+                document.getElementById('page1').classList.remove('d-none');
+                document.getElementById('page2').classList.remove('d-none');
+            }
+            else if( lastindex > 2 && lastindex < 18){
+                document.getElementById('page1').classList.remove('d-none');
+                document.getElementById('page2').classList.remove('d-none');
+                document.getElementById('page3').classList.remove('d-none');
+
+            }
+            else if( lastindex > 18 && lastindex < 24){
+                document.getElementById('page1').classList.remove('d-none');
+                document.getElementById('page2').classList.remove('d-none');
+                document.getElementById('page3').classList.remove('d-none');
+                document.getElementById('page4').classList.remove('d-none');
+            }
+            
             this.num=0;
             console.log('hola')
         }
@@ -59,11 +96,13 @@ export default class IndexController extends Controller {
             this.Filtros = this.filterItemsbyCategory(this.datos,this.cod.value);
             this.datos = this.filterItemsbyName(this.Filtros,search.value);
         }
+        this.cargar(1);
     }
     
     page1 = 0;
     page2 = 0;
     page3 = 0;
+    page4 = 0;
     @action
     pag1(){ 
         this.ComboBox();
@@ -85,9 +124,11 @@ export default class IndexController extends Controller {
             document.getElementById('page1').classList.add('active');
             document.getElementById('page2').classList.remove('active');
             document.getElementById('page3').classList.remove('active');
+            document.getElementById('page4').classList.remove('active');
             this.page1 = 1;
             this.page2 = 0;
             this.page3 = 0;
+            this.page4 = 0;
         }
         
     }
@@ -113,9 +154,11 @@ export default class IndexController extends Controller {
             document.getElementById('page2').classList.add('active');
             document.getElementById('page1').classList.remove('active');
             document.getElementById('page3').classList.remove('active');
+            document.getElementById('page4').classList.remove('active');
             this.page1 = 0;
             this.page2 = 1;
             this.page3 = 0;
+            this.page4 = 0;
         }
     }
     @action
@@ -139,9 +182,39 @@ export default class IndexController extends Controller {
             document.getElementById('page3').classList.add('active');
             document.getElementById('page1').classList.remove('active');
             document.getElementById('page2').classList.remove('active');
+            document.getElementById('page4').classList.remove('active');
             this.page1 = 0;
             this.page2 = 0;
             this.page3 = 1;
+            this.page4 = 0;
+        }
+    }
+    @action
+    pag4(){
+        this.ComboBox();
+        if(this.page3 == 0){
+            const lastindex = this.datos.length - 1;
+            const Pagina = [];
+            if(lastindex > 11 && lastindex <= 18){
+                for(var x = 12; x <= lastindex ;x++){
+                    Pagina[x-12] = this.datos[x];
+                };
+            }
+            else{
+                for(var x = 12; x <= 17;x++){
+                    Pagina[x-12] = this.datos[x];
+                };
+            }
+            this.datos = Pagina;
+            document.getElementById('page4').classList.remove('d-none');
+            document.getElementById('page4').classList.add('active');
+            document.getElementById('page1').classList.remove('active');
+            document.getElementById('page2').classList.remove('active');
+            document.getElementById('page3').classList.remove('active');
+            this.page1 = 0;
+            this.page2 = 0;
+            this.page3 = 0;
+            this.page4 = 1;
         }
     }
 

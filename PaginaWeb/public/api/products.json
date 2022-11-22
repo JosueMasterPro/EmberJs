@@ -319,6 +319,30 @@
         "color": "silver",
         "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/Samsung-Memoria-64gb-silver.jpg"
       }]
+    },
+    {
+      "id": "17",
+      "name": "Tenis Adidas Supernova Trail Running Shoe",
+      "category": "Shoes",
+      "description": "Tenis Adidas de alta comodidad",
+      "price": {
+        "original": 0,
+        "current": 59.99
+      },
+      "features": [
+        "100% sintético textil.",
+        "Suela de Goma",
+        "Tenis de correr para hombre para la carrera diaria",
+        "Ajuste regular; cierre de cordones para un ajuste cómodo",
+        "Parte superior de malla diseñada para transpirabilidad y peso ligero; detalles reflectantes",
+        "Entresuela acolchada Bounce con Boost en el talón para retorno de energía; suela de goma para mayor agarre",
+        "Este producto está fabricado con Primegreen, una serie de materiales reciclados de alto rendimiento. El 50% de la parte superior es de contenido reciclado. Sin poliéster virgen"
+
+      ],
+      "colors": [{
+        "color": "black",
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/adidas_run.png"
+      }]
     }
   ]
 }
