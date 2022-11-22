@@ -15,7 +15,11 @@ export default class IndexController extends Controller {
     @tracked Filtros = this.Pro1;
     search = '';
     cod = '';
-
+    page1 = 0;
+    page2 = 0;
+    page3 = 0;
+    page4 = 0;
+    num=1
     //este filtra por nombre que se escribe e el input
     filterItemsbyName = (Data,query) => {
         return Data.filter(
@@ -35,7 +39,6 @@ export default class IndexController extends Controller {
         return this.datos;
     }
     //Funcion que se ejecuta al cargar la pagina 1 vez
-    num=1
     @action
     cargar(){
         if(this.num == 1){
@@ -57,7 +60,7 @@ export default class IndexController extends Controller {
             document.getElementById('page1').classList.add('active');
             document.getElementById('page2').classList.remove('active');
             document.getElementById('page3').classList.remove('active');
-            this.page1 = 1;
+            document.getElementById('page4').classList.remove('active');
             if(lastindex < 6){
                 document.getElementById('page1').classList.remove('d-none');
             }
@@ -77,10 +80,62 @@ export default class IndexController extends Controller {
                 document.getElementById('page3').classList.remove('d-none');
                 document.getElementById('page4').classList.remove('d-none');
             }
-            
+            this.page1 = 1;
+            this.page2 = 0;
+            this.page3 = 0;
+            this.page4 = 0;
             this.num=0;
-            console.log('hola')
         }
+    }
+    @action
+    pagCate(){
+            //Cargar la pagina 1 al principio
+            this.ComboBox();
+            const lastindex = this.datos.length - 1;
+            const Pagina = [];
+            if(lastindex < 6 ){
+                for(var x = 0; x <= lastindex ;x++){
+                    Pagina[x] = this.datos[x];
+                };
+            }
+            else{
+                for(var x = 0; x < 6;x++){
+                    Pagina[x] = this.datos[x];
+                };
+            }
+            this.datos = Pagina;
+            document.getElementById('page1').classList.add('active');
+            document.getElementById('page2').classList.remove('active');
+            document.getElementById('page3').classList.remove('active');
+            document.getElementById('page4').classList.remove('active');
+            //quitamos el d-none que es de bootstrap para que no see vea el item
+                document.getElementById('page1').classList.add('d-none');
+                document.getElementById('page2').classList.add('d-none');
+                document.getElementById('page3').classList.add('d-none');
+                document.getElementById('page4').classList.add('d-none');
+            if(lastindex < 6){
+                document.getElementById('page1').classList.remove('d-none');
+            }
+            else if( lastindex > 5 && lastindex < 12){
+                document.getElementById('page1').classList.remove('d-none');
+                document.getElementById('page2').classList.remove('d-none');
+            }
+            else if( lastindex > 11 && lastindex < 18){
+                document.getElementById('page1').classList.remove('d-none');
+                document.getElementById('page2').classList.remove('d-none');
+                document.getElementById('page3').classList.remove('d-none');
+
+            }
+            else if( lastindex > 17 && lastindex < 24){
+                document.getElementById('page1').classList.remove('d-none');
+                document.getElementById('page2').classList.remove('d-none');
+                document.getElementById('page3').classList.remove('d-none');
+                document.getElementById('page4').classList.remove('d-none');
+            }
+            this.page1 = 1;
+            this.page2 = 0;
+            this.page3 = 0;
+            this.page4 = 0;
     }
     //accion que nos permite filtrar por categoria y traer la lista de items que pertenezcan a la misma
     @action
@@ -96,13 +151,9 @@ export default class IndexController extends Controller {
             this.Filtros = this.filterItemsbyCategory(this.datos,this.cod.value);
             this.datos = this.filterItemsbyName(this.Filtros,search.value);
         }
-        this.cargar(1);
     }
     
-    page1 = 0;
-    page2 = 0;
-    page3 = 0;
-    page4 = 0;
+
     @action
     pag1(){ 
         this.ComboBox();
@@ -122,6 +173,7 @@ export default class IndexController extends Controller {
             this.datos = Pagina;
             document.getElementById('page1').classList.remove('d-none');
             document.getElementById('page1').classList.add('active');
+            document.getElementById('page1').disable=true;
             document.getElementById('page2').classList.remove('active');
             document.getElementById('page3').classList.remove('active');
             document.getElementById('page4').classList.remove('active');
@@ -130,7 +182,6 @@ export default class IndexController extends Controller {
             this.page3 = 0;
             this.page4 = 0;
         }
-        
     }
 
     @action

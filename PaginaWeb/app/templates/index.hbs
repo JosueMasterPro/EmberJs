@@ -9,7 +9,7 @@
         <input name="search"  id="search" type="text" class="form-control input-search" placeholder="Search" aria-describedby="basic-addon1" {{on "input" this.ComboBox}}>
       {{!-- seleccion de la categoria para filtrar los productos --}}
       <div class="input-group-append">
-        <select class="form-select form-select-sm Categoria" id="category" {{on "input" this.ComboBox}}>
+        <select class="form-select form-select-sm Categoria" id="category" {{on "input" this.ComboBox}} {{on "change" this.pagCate}}>
           <option selected="" value="0">Categoria</option>
           <option value="1">Todas las Categorias</option>
           <option value="electronic">Electronica</option>
