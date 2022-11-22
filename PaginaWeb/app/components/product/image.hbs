@@ -1,5 +1,12 @@
 {{!-- funcion comentada para hacer el zoom en la imagen en la pagina de detalle
 y cambiar las imagenes de forma automatica --}}
-<div class="product-image" {{!--{{on "click" @toggleZoom}}--}}>
-  <img src={{@src}} alt="">
-</div>
+
+{{#if @isDetail}}
+  <div class="product-image" {{on "click" @toggleZoom}}>
+    <img src={{@src}} alt="">
+  </div>
+  {{else}}
+  <div class="product-image" {{!--{{on "click" @toggleZoom}}--}}>
+    <img src={{@src}} alt="">
+  </div>
+{{/if}}

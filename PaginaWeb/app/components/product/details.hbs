@@ -1,8 +1,8 @@
 <div class="product-details">
   {{!-- Header --}}
-  <section>
+  <section class="Size-text">
     {{!-- mostramos las estrellas como iconos --}}
-    <h3>{{@name}}</h3>
+    <h3 class="Size-text">{{@name}}</h3>
     <div class="text-warning">
       <i class="fa fa-star"></i>
       <i class="fa fa-star"></i>
@@ -17,18 +17,18 @@
     item.hbs y el helper unless--}}
     <section class={{unless @isDetails 'h3'}}>
       {{#if @price.original}}  
-        <del data-test-original-price class="small text-black-50">{{currency @price.original}}</del>
-        <i data-test-current-price class="text-danger font-weight-bold">{{currency @price.current}}</i>
+        <del data-test-original-price class="small text-black-50 Size-text">{{currency @price.original}}</del>
+        <i data-test-current-price class="text-danger font-weight-bold Size-text">{{currency @price.current}}</i>
       {{else}}
-        <i data-test-current-price class="text-danger font-weight-bold">{{currency @price.current}}</i>
+        <i data-test-current-price class="text-danger font-weight-bold Size-text">{{currency @price.current}}</i>
       {{/if}}
 
     </section>
  
   {{#if @isDetails}}
     <div class="d-flex justify-content-between align-items-end">
-      <div>
-        <h3>Color</h3>
+      <div class="Size-text">
+        <h3 class="Size-text">Color</h3>
         {{!-- genera las acciones en los span para cambiar el color --}}
         <div class="product-colors active-{{@color}}">
           {{!-- usamos un each para listar los colores y por medio
@@ -43,7 +43,7 @@
       {{!-- boton con evento para agregar el producto al carrito --}}
      <button
         data-test-add-to-cart
-        class="btn btn-info" type="button" {{on "click" this.addToCart}}>
+        class="btn btn-info CartBt" type="button" {{on "click" this.addToCart}}>
         <i class="fa fa-shopping-cart mr-1"></i>
         Add to cart
       </button>

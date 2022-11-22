@@ -7,7 +7,6 @@ import { action } from '@ember/object';
 
 export default class IndexRoute extends Route {
   @service store;
-
   //creamos el modelo y retornamos los productos
   //cuando cambiamos a la api cambiams el modelo a async para que funcione el await correctamente
   async model() {
