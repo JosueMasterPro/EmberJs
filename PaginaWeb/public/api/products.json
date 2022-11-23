@@ -368,6 +368,278 @@
         "color": "white",
         "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/reebok_sport.png"
       }]
+    },
+    {
+      "id": "19",
+      "name": "Disco duro SSD Adata",
+      "category": "memory",
+      "description": "Duisco duro Adata SSD de 500GB por cable Sata",
+      "price": {
+        "original": 0,
+        "current": 50
+      },
+      "features": [
+        "Nuevo",
+        "Imported",
+        "Materiales reistentes contra daños",
+        "Menor consumo de energia",
+        "Almacenamiento de 500 GB",
+        "Mayor durabilidad"
+      ],
+      "colors": [{
+        "color": "white",
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/disco_duro_adata.png"
+      }]
+    },
+    {
+      "id": "20",
+      "name": "Disco duro SSD Adata Interno 240 GB",
+      "category": "memory",
+      "description": "Disco Duro SSD Adata de 240 Gb Interno",
+      "price": {
+        "original": 0,
+        "current": 50
+      },
+      "features": [
+        "240 GB de almacenamiento",
+        "Modelo  SU630",
+        "2 Años de garantia",
+        "Mayor eficiencia en el consumo energetico",
+        "Mas liviano y con mayores capacidades de lectura y escritura",
+        "Tipo de conexion SATA",
+        "Facil instalacion"
+      ],
+      "colors": [{
+        "color": "white",
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/ssd_interno_adata.png"
+      }]
+    },
+    {
+      "id": "21",
+      "name": "Disco duro SSD Adata 500 GB Externo",
+      "category": "memory",
+      "description": "Disco Duro SSD Adata de 500 GB Portatil",
+      "price": {
+        "original": 0,
+        "current": 80
+      },
+      "features": [
+        "500 GB de almacenamiento",
+        "Materiales 100% Resistentes contra caidas",
+        "Modelo HD710  ",
+        "1 Años de garantia",
+        "Mayor almacenamiento",
+        "Mas liviano y con mayores capacidades de lectura y escritura",
+        "Tipo de conexion USB y Tipo C",
+        "Facil conexion",
+        "Mayor portabilidad"
+      ],
+      "colors": [{
+        "color": "white",
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/adata_externo.png"
+      }]
+    },
+    {
+      "id": "22",
+      "name": "Mirco SD Adata 256 GB Interno",
+      "category": "memory",
+      "description": "Micro SD Adata 256 GB Almacenamiento Interno",
+      "price": {
+        "original": 0,
+        "current": 25
+      },
+      "features": [
+        "256 GB de almacenamiento",
+        "Modelo UHS I  ",
+        "1 Años de garantia",
+        "Compatible con dispositivos Android, Camaras, Computadoras, Tablets",
+        "Incluye adaptador para computadoras",
+        "Mayor durabilidad",
+        "Facil instalacion",
+        "Mayor capacidad"
+      ],
+      "colors": [{
+        "color": "white",
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/micro_sd_adata.png"
+      }]
+    },
+    {
+      "id": "23",
+      "name": "Memoria USB 3.2 Elite Adata",
+      "category": "memory",
+      "description": "Memoria USB Adata 512 GB Almacenamiento Generacion 2",
+      "price": {
+        "original": 0,
+        "current": 50
+      },
+      "features": [
+        "512 GB de almacenamiento",
+        "Modelo Elite UIE800  ",
+        "2 Años de garantia",
+        "Compatible con dispisitivos Tipo C",
+        "Diseño completamente renovado y elegante",
+        "Mayor capacidad de transferecia de archivos"
+      ],
+      "colors": [{
+        "color": "white",
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/usb_adata.png"
+      }]
+    },
+    {
+      "id": "24",
+      "name": "Teclado Mecanico KX500 Red",
+      "category": "keyboard",
+      "description": "Teclado Mecanico Gaming KX500 Red",
+      "price": {
+        "original": 0,
+        "current": 50
+      },
+      "features": [
+        "Conexion directa USB",
+        "Mayor fluidez ",
+        "1 Años de garantia",
+        "Teclas iluminadas por patrones variables",
+        "Diseño completamente renovado y diseñado para juegos de alta demanda",
+        "Diseño ergonomico"
+      ],
+      "colors": [{
+        "color": "white",
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/teclado_kx.png"
+      }]
+    },
+    {
+      "id": "25",
+      "name": "Teclado Mecanico Gamer Logitech G915",
+      "category": "keyboard",
+      "description": "Teclado Mecanico Gamer Logitech G915",
+      "price": {
+        "original": 0,
+        "current": 50
+      },
+      "features": [
+        "Conexion directa USB",
+        "Diseñado para un publico enfocado al mundo de los videojuegos ",
+        "18 Meses de garantia",
+        "Teclas iluminadas por luces RGB Personalizadas",
+        "Diseño completamente renovado para su uso continuo",
+        "Diseño ergonomico para los amnates del gaming"
+      ],
+      "colors": [{
+        "color": "white",
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/teclado_logitech.png"
+      }]
+    },
+    {
+      "id": "26",
+      "name": "Teclado Inalambrico HP 230 ",
+      "category": "keyboard",
+      "description": "Teclado Egonomico para oficina",
+      "price": {
+        "original": 0,
+        "current": 60
+      },
+      "features": [
+        "Conexion directa USB",
+        "Mayor comodidad para el usuario ",
+        "1 Años de garantia",
+        "Teclas con respuesta sensible para un mejor confort del usuario",
+        "Diseño completamente nuevo y diseñado para usuarios que trabajan a diario con su computador",
+        "Diseño ergonomico"
+      ],
+      "colors": [{
+        "color": "white",
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/teclado_hp.png"
+      }]
+    },
+    {
+      "id": "27",
+      "name": "Teclado Trust  ",
+      "category": "keyboard",
+      "description": "Teclado Ergonomico para oficina",
+      "price": {
+        "original": 0,
+        "current": 100
+      },
+      "features": [
+        "Conexion Inalambrica Bluethoo y Microreceptor USB",
+        "Mayor compatibilidad con mas dispositivos y plataformas ",
+        "1 Años de garantia",
+        "Teclado mas liviano para mayor comodidad",
+        "Diseño completamente nuevo, diseñado para usuarios que trabajan a diario con su computador",
+        "Diseño mas elegante "
+        
+      ],
+      "colors": [{
+        "color": "white",
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/teclado_trust.png"
+      }]
+    },
+    {
+      "id": "28",
+      "name": "Teclado Logitech K400 Plus",
+      "category": "keyboard",
+      "description": "Teclado enfocado para contenido multimedia",
+      "price": {
+        "original": 0,
+        "current": 100
+      },
+      "features": [
+        "Conexion Inalambrica microreceptor USB",
+        "Mayor compatibilidad con mas dispositivos y plataformas (Televisores conectados a laptops) ",
+        "1 Años de garantia",
+        "Teclado ",
+        "Diseño completamente nuevo, diseñado para usuarios que requieren mayor acceso a equipos multimedia desde un solo teclado",
+        "Diseño mas practico y eficiente"
+        
+      ],
+      "colors": [{
+        "color": "white",
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/teclado_logitech_k.png"
+      }]
+    },
+    {
+      "id": "29",
+      "name": "Teclado Maxell Inalambrico",
+      "category": "keyboard",
+      "description": "Teclado Maxell",
+      "price": {
+        "original": 0,
+        "current": 20
+      },
+      "features": [
+        "Conexion Inalambrica microreceptor USB",
+        "Compatible con gran variedad de dispositivos",
+        "1 Años de garantia",
+        "Teclado basico  ",
+        "Diseño mas practico y eficiente"
+        
+      ],
+      "colors": [{
+        "color": "white",
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/teclado_maxell.png"
+      }]
+    },
+    {
+      "id": "30",
+      "name": "Teclado Gaming Tuf",
+      "category": "keyboard",
+      "description": "Teclado Gamin Tuf",
+      "price": {
+        "original": 0,
+        "current": 100
+      },
+      "features": [
+        "Conexion alambrica USB",
+        "Compatible con todo tipo de ordenador",
+        "1 Años de garantia",
+        "Teclado enfocado al entretenimiento gaming ",
+        "Diseño iluminado con RGB personalizado para una mejor experiencia",
+        "Teclado mecanico para una respuesta mas comoda al usuario"
+      ],
+      "colors": [{
+        "color": "white",
+        "image": "https://raw.githubusercontent.com/JosueMasterPro/EmberJs/main/PaginaWeb/public/assets/images/teclado_tuf.png"
+      }]
     }
   ]
 }
