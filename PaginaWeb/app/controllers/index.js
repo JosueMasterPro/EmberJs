@@ -19,6 +19,7 @@ export default class IndexController extends Controller {
     page2 = 0;
     page3 = 0;
     page4 = 0;
+    page5 = 0;
     num = 1;
     //este filtra por nombre que se escribe e el input
     filterItemsbyName = (Data,query) => {
@@ -64,26 +65,34 @@ export default class IndexController extends Controller {
             if(lastindex < 6){
                 document.getElementById('page1').classList.remove('d-none');
             }
-            else if( lastindex > 6 && lastindex < 12){
+            else if( lastindex >= 6 && lastindex < 12){
                 document.getElementById('page1').classList.remove('d-none');
                 document.getElementById('page2').classList.remove('d-none');
             }
-            else if( lastindex > 2 && lastindex < 18){
+            else if( lastindex >= 12 && lastindex < 18){
                 document.getElementById('page1').classList.remove('d-none');
                 document.getElementById('page2').classList.remove('d-none');
                 document.getElementById('page3').classList.remove('d-none');
 
             }
-            else if( lastindex > 18 && lastindex < 24){
+            else if( lastindex >= 18 && lastindex < 24){
                 document.getElementById('page1').classList.remove('d-none');
                 document.getElementById('page2').classList.remove('d-none');
                 document.getElementById('page3').classList.remove('d-none');
                 document.getElementById('page4').classList.remove('d-none');
             }
+            else if( lastindex >= 24 && lastindex < 30){
+                document.getElementById('page1').classList.remove('d-none');
+                document.getElementById('page2').classList.remove('d-none');
+                document.getElementById('page3').classList.remove('d-none');
+                document.getElementById('page4').classList.remove('d-none');
+                document.getElementById('page5').classList.remove('d-none');
+            }
             this.page1 = 1;
             this.page2 = 0;
             this.page3 = 0;
             this.page4 = 0;
+            this.page5 = 0;
             this.num=0;
         }
     }
@@ -110,11 +119,13 @@ export default class IndexController extends Controller {
             document.getElementById('page2').classList.remove('active');
             document.getElementById('page3').classList.remove('active');
             document.getElementById('page4').classList.remove('active');
+            document.getElementById('page5').classList.remove('active');
             //quitamos el d-none que es de bootstrap para que no see vea el item
                 document.getElementById('page1').classList.add('d-none');
                 document.getElementById('page2').classList.add('d-none');
                 document.getElementById('page3').classList.add('d-none');
                 document.getElementById('page4').classList.add('d-none');
+                document.getElementById('page5').classList.add('d-none');
             if(lastindex < 6){
                 document.getElementById('page1').classList.remove('d-none');
             }
@@ -134,10 +145,18 @@ export default class IndexController extends Controller {
                 document.getElementById('page3').classList.remove('d-none');
                 document.getElementById('page4').classList.remove('d-none');
             }
+            else if( lastindex > 23 && lastindex < 30){
+                document.getElementById('page1').classList.remove('d-none');
+                document.getElementById('page2').classList.remove('d-none');
+                document.getElementById('page3').classList.remove('d-none');
+                document.getElementById('page4').classList.remove('d-none');
+                document.getElementById('page5').classList.remove('d-none');
+            }
             this.page1 = 1;
             this.page2 = 0;
             this.page3 = 0;
             this.page4 = 0;
+            this.page5 = 0;
     }
 
     //accion que nos permite filtrar por categoria y traer la lista de items que pertenezcan a la misma
@@ -153,9 +172,7 @@ export default class IndexController extends Controller {
         else{
             this.Filtros = this.filterItemsbyCategory(this.datos,this.cod.value);
             this.datos = this.filterItemsbyName(this.Filtros,search.value);
-        }
-        
-        
+        }   
     }
     
 
@@ -182,13 +199,14 @@ export default class IndexController extends Controller {
             document.getElementById('page2').classList.remove('active');
             document.getElementById('page3').classList.remove('active');
             document.getElementById('page4').classList.remove('active');
+            document.getElementById('page5').classList.remove('active');
             this.page1 = 1;
             this.page2 = 0;
             this.page3 = 0;
             this.page4 = 0;
+            this.page5 = 0;
         }
     }
-
     @action
     pag2(){
         this.ComboBox();
@@ -239,16 +257,18 @@ export default class IndexController extends Controller {
             document.getElementById('page1').classList.remove('active');
             document.getElementById('page2').classList.remove('active');
             document.getElementById('page4').classList.remove('active');
+            document.getElementById('page5').classList.remove('active');
             this.page1 = 0;
             this.page2 = 0;
             this.page3 = 1;
             this.page4 = 0;
+            this.page5 = 0;
         }
     }
     @action
     pag4(){
         this.ComboBox();
-        if(this.page3 == 0){
+        if(this.page4 == 0){
             const lastindex = this.datos.length - 1;
             const Pagina = [];
             if(lastindex > 18 && lastindex <= 24){
@@ -267,10 +287,42 @@ export default class IndexController extends Controller {
             document.getElementById('page1').classList.remove('active');
             document.getElementById('page2').classList.remove('active');
             document.getElementById('page3').classList.remove('active');
+            document.getElementById('page5').classList.remove('active');
             this.page1 = 0;
             this.page2 = 0;
             this.page3 = 0;
             this.page4 = 1;
+            this.page5 = 0;
+        }
+    }
+    @action
+    pag5(){
+        this.ComboBox();
+        if(this.page5 == 0){
+            const lastindex = this.datos.length - 1;
+            const Pagina = [];
+            if(lastindex > 24 && lastindex <= 30){
+                for(var x = 24; x <= lastindex ;x++){
+                    Pagina[x-24] = this.datos[x];
+                };
+            }
+            else{
+                for(var x = 24; x <= 29;x++){
+                    Pagina[x-24] = this.datos[x];
+                };
+            }
+            this.datos = Pagina;
+            document.getElementById('page5').classList.remove('d-none');
+            document.getElementById('page5').classList.add('active');
+            document.getElementById('page1').classList.remove('active');
+            document.getElementById('page2').classList.remove('active');
+            document.getElementById('page3').classList.remove('active');
+            document.getElementById('page4').classList.remove('active');
+            this.page1 = 0;
+            this.page2 = 0;
+            this.page3 = 0;
+            this.page4 = 0;
+            this.page5 = 1;
         }
     }
 
