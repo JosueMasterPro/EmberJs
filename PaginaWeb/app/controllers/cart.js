@@ -36,30 +36,30 @@ export default class CartController extends Controller {
   @action
   updateItemCount(item, event) {
     const count = event.target.value;
-    if (count >= 0) {
+    if (count >= 1) {
       item.count = count;
     } else {
-      item.count = 0;
+      item.count = 1;
     }
   }
   //accion que suma los items de la lista
   @action
   ItemCount(item, event) {
     this.cod = document.getElementById('input-' + item.name + '-' + item.color);
-    if (this.cod.value >= 0) {
+    if (this.cod.value >= 1) {
       item.count = parseFloat(this.cod.value) + parseFloat(this.Suma);
     } else {
-      item.count = 0;
+      item.count = 1;
     }
   }
   //accion que resta los items de la lista
   @action
   ItemCountless(item, event) {
     this.cod = document.getElementById('input-' + item.name + '-' + item.color);
-    if (this.cod.value >= 1) {
+    if (this.cod.value >= 2) {
       item.count = parseFloat(this.cod.value) - parseFloat(this.Suma);
     } else {
-      item.count = 0;
+      item.count = 1;
     }
   }
   //remueve los items recargardo el subtotal y items(la funcion)
